@@ -33,13 +33,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div id="banner" class="12u">
-					<div class="container"><a href="#"><img src="images/pics01.jpg" alt=""></a></div>
-				</div>
-			</div>
+		<div align="center">
+    		<iframe src="banner.php" height="1435px" width="2100px"></iframe>
 		</div>
+
+		
 <!-- 		<div id="wrapper"> -->
 <!-- 			<div class="container" id="marketing"> -->
 <!-- 				<div class="row divider"> -->
