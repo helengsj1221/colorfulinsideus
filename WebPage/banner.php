@@ -7,9 +7,9 @@
 <body>
 	<div class="slide-container" id="slide_component">
 		<ul class="slide-content">
-			<li><img src="images/pics01.jpg" /></li>
-			<li><img src="images/pics01.jpg" /></li>
-			<li><img src="images/pics01.jpg" /></li>
+			<li><img src="images/pics01.jpg" width="1280px" height="580px" /></li>
+			<li><img src="images/pics01.jpg" width="1280px" height="580px" /></li>
+			<li><img src="images/pics01.jpg" width="1280px" height="580px" /></li>
 		</ul>
 		<div class="slide-items-bg"></div>
 		<ul class="slide-items">

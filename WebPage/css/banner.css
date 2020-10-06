@@ -7,8 +7,8 @@ ul, li {
 }
 
 .slide-container {
-	width:2048px;
-	height:1374px;
+	width:1280px;
+	height:580px;
 	margin:0 auto;
 	position:relative;
 	overflow:hidden;
@@ -25,8 +25,8 @@ ul, li {
 	top:0;
 }
 .slide-content li {
-	width:2048px;
-	height:1374px;
+	width:1280px;
+	height:580px;
 	float:left;
 }
 .slide-items-bg {

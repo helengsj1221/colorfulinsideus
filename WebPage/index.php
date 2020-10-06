@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div align="center">
-    		<iframe src="banner.php" height="1435px" width="2100px"></iframe>
+    		<iframe src="banner.php" height="1000px" width="2100px"></iframe>
 		</div>
 
 		
