@@ -29,20 +29,6 @@ ul, li {
 	height:580px;
 	float:left;
 }
-.slide-items-bg {
-	position:absolute;
-	width:99px;
-	height:28px;
-	background:#CCC;
-	right:11px;
-	bottom:11px;
-	z-index:2;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
-	opacity:0.4;
-	filter:alpha(opacity=40);
-}
 .slide-items {
 	position:absolute;
 	z-index:3;

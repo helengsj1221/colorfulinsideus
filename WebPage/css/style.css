@@ -1,7 +1,13 @@
  
 html, body {
 }
-
+#wrapper {
+   position: absolute;
+   height: 100%; 
+   width: 100%;
+   min-height: 500px; 
+   min-width: 1280px;
+}
 body {
 	margin: 0em;
 	padding: 0em;
