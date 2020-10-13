@@ -10,7 +10,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
-		</head>
+		</head> 
 	<body class="homepage">
 		<div id="header-wrapper">
 			<div class="container">
