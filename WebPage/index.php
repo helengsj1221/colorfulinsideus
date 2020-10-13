@@ -8,6 +8,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		</head> 
