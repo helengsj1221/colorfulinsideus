@@ -141,6 +141,7 @@ slide-container{
 	margin:0;
 	padding:0;
 	list-style: none;
+	
 }
     .slide-container {
 	width:1280px;
@@ -153,6 +154,7 @@ slide-container{
 	-moz-box-shadow:2px 4px 4px #9f9f9f;
 	-webkit-box-shadow:2px 4px 4px #9f9f9f;
 	box-shadow:2px 4px 4px #9f9f9f;
+	top:20px;
 }
 .slide-content {
 	position:absolute;
