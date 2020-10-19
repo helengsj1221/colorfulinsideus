@@ -8,7 +8,7 @@
             $today     = date("Ymd");  
             $con = mysqli_connect($hostname,$username, $password,$dbname);
             //撈資料
-            $newssql = "SELECT * FROM `BOARD` WHERE `BOARD_DATES`<= ".$today." AND `BOARD_DATEE` >=".$today;
+            $newssql = "SELECT * FROM `BOARD` WHERE `BOARD_DATES`<= ".$today." AND `BOARD_DATEE` >=".$today." ORDER BY `BOARD_DATES` DESC LIMIT 7";
             mysqli_query($con, 'SET NAMES utf8');
             $result = mysqli_query($con, $newssql);
     ?>
@@ -25,7 +25,8 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-		</head> 
+	</head> 
+	
 	<body class="homepage">
 		<div id="header-wrapper">
 			<div class="container">
@@ -58,18 +59,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="slide-container" id="slide_component">
-		<ul class="slide-content">
-			<li><img src="images/pics01.jpg" width="1280px" height="580px" /></li>
-			<li><img src="images/pics05.jpg" width="1280px" height="580px" /></li>
-			<li><img src="images/pics10.jpg" width="1280px" height="580px" /></li>
-		</ul>
-		<ul class="slide-items">
-			<li class="current-slide-item"></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
+		</body>
+		
+		<body>
+    	<div class="slide-container" id="slide_component">
+    		<ul class="slide-content">
+    			<li><img src="images/pics01.jpg" width="1280px" height="580px" /></li>
+    			<li><img src="images/pics05.jpg" width="1280px" height="580px" /></li>
+    			<li><img src="images/pics10.jpg" width="1280px" height="580px" /></li>
+    		</ul>
+    		<ul class="slide-items">
+    			<li class="current-slide-item"></li>
+    			<li></li>
+    			<li></li>
+    		</ul>
+    	</div>
+    	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    	<script type="text/javascript" src="js/banner.js"></script>
+    	<script type="text/javascript">
+    		$("#slide_component").jSlide();
+    	</script>
+	</body>
+	
+	<body>
 	<div id="news">
  	<h2>最新消息  NEWS</h2>
     	<ul class="newstyle">
@@ -86,6 +98,3 @@
 	</body>
 </div>
 </html>
-<script type="text/javascript">
-		$("#slide_component").jSlide();
-</script>
