@@ -2,13 +2,14 @@
 html, body {
 	
 }
-#wrapper {
-   position: absolute;
-   height: 100%; 
-   width: 100%;
-   min-height: 500px; 
-   min-width: 1280px;
+div {
+	margin:auto;
+	padding:0;
 }
+li {
+	 list-style: none;
+}
+
 /* Logo */
 #logo {
 	position: absolute;
@@ -25,7 +26,7 @@ html, body {
 	padding: 10px 10px 0px 0px;
 	text-decoration: none;
 	text-transform: none;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
 	font-size: 35px;
 	font-weight: 200;
 	color: #1C1C1C;
@@ -93,7 +94,7 @@ h1, h3 {
 	margin: 0em;
 	padding: 0em;
 	text-transform: none;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
 	font-weight: 300;
 	color: #887644;
 }
@@ -112,36 +113,35 @@ strong {
 }
 
 
-	ul { 
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    ul.drop-down-menu {
-        display: inline-block;
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-size: 13px;
-    }
+ul.drop-down-menu {
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+}
 
-    ul.drop-down-menu li {
-        position: relative;
-        white-space: nowrap;
-    }
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+}
 
-    ul.drop-down-menu > li:last-child {
-        border-bottom: none;
-    }
+ul.drop-down-menu > li:last-child {
+    border-bottom: none;
+}
 
-    ul.drop-down-menu > li {
-        float: left; /* 只有第一層是靠左對齊*/
-    }
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
 /*     banner頁 */
 slide-container{
 	margin:0;
 	padding:0;
-	list-style: none;
-	
+	list-style: none;	
 }
     .slide-container {
 	width:1280px;
@@ -209,8 +209,8 @@ slide-container{
 	padding: 0 0 0.125em;
 }
 
-.link--index::before,
-.link--index::after {
+.link-index::before,
+.link-index::after {
 	content: '';
 	width: 100%;
 	height: 3px;
@@ -223,38 +223,38 @@ slide-container{
 	transition: transform 0.5s;
 }
 
-.link--index::before {
+.link-index::before {
 	right: 0;
 	top: 0;
 	-webkit-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
 }
 
-.link--index::after {
+.link-index::after {
 	left: 0;
 	bottom: 0;
 	-webkit-transform-origin: 0 50%;
 	transform-origin: 0 50%;
 }
 
-.link--index:hover::before,
-.link--index:hover::after {
+.link-index:hover::before,
+.link-index:hover::after {
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
 }
 
-.link--index span {
+.link-index span {
 	position: relative;
 	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
 }
 
-.link--index:hover span {
+.link-index:hover span {
 	color: transparent;
 }
 
-.link--index span::before,
-.link--index span::after {
+.link-index span::before,
+.link-index span::after {
 	position: absolute;
 	color: #000;
 	opacity: 0;
@@ -262,82 +262,82 @@ slide-container{
 	transition: transform 0.5s, opacity 0.5s;
 }
 
-.link--index span::before {
+.link-index span::before {
 	content: attr(data-letters-l);
 	left: 0;
 	-webkit-transform: translate3d(-5px,0,0);
 	transform: translate3d(-5px,0,0);
 }
 
-.link--index span::after {
+.link-index span::after {
 	content: attr(data-letters-r);
 	right: 0;
 	-webkit-transform: translate3d(5px,0,0);
 	transform: translate3d(5px,0,0);
 }
 
-.link--index:hover span::before,
-.link--index:hover span::after {
+.link-index:hover span::before,
+.link-index:hover span::after {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
- ul.drop-down-menu ul {
-        position: absolute;
-        z-index: 99;
-        left: -1px;
-        top: 100%;
-        min-width: 100px;
-        display: none;
-    }
-    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
-    	opacity: 1;
-        -webkit-transition: opacity 0.3s;
-        transition: opacity 0.3s;
-        left: -1px;
-        border-right: 5px;
-        display: block;
-    }
+ul.drop-down-menu ul {
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 100px;
+    display: none;
+}
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+	opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;
+    border-right: 5px;
+    display: block;
+}
 
-    ul.drop-down-menu ul li:last-child {
-        border-bottom: none;
-    }
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
 
-    ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
-        z-index: 999;
-        top: 10px;
-        left: 90%;
-    }
-     ul.drop-down-menu li:hover>ul ul { /* 滑鼠滑入之後、次選單之後的選單依舊隱藏*/
-        left: 99999px;
-    }
+ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+    z-index: 999;
+    top: 10px;
+    left: 90%;
+}
+ul.drop-down-menu li:hover>ul ul { /* 滑鼠滑入之後、次選單之後的選單依舊隱藏*/
+    left: 99999px;
+}
 
-    ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
-        left: 90%;
-    }
+ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
+    left: 90%;
+}
 
 /*  次目錄 */
-.link--secindex {
+.link-secindex {
 	background: #dadada;
 }
 
-.link--secindex:hover {
+.link-secindex:hover {
 	background: #414141;
 }
 
 
-.link--secindex:hover::after {
+.link-secindex:hover::after {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-.link--secindex span {
+.link-secindex span {
 	display: block;
 	position: relative;
 }
 
-.link--secindex span::before {
+.link-secindex span::before {
 	content: attr(data-letters);
 	position: absolute;
 	color: #fff;
@@ -349,12 +349,12 @@ slide-container{
 	transition: width 0.5s;
 }
 
-.link--secindex:hover span::before {
+.link-secindex:hover span::before {
 	width: 100%;
 }   
 /* 最新消息  	 */
-   ul.newstyle {
-	font-family: 'Oswald', sans-serif;
+ul.newstyle {
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
@@ -403,49 +403,46 @@ h2 {
 	margin-bottom: 20px;
 	padding: 15px 0px 0px 20px;
 	color: #3b3b3b;
-	border-style:groove;
-	border-bottom-style:solid;
-	border-top:none;
-	border-left:none;
-	border-right:none;
-	border-bottom-color:#888888;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 150px;
 	border-bottom-right-radius: 50px;
 	border-bottom-left-radius: 10px;
 }
-.balloon {
-	padding: 1.87em;
-	background: url(images/img08.jpg) repeat left top;
-	border-radius: 5px;
-	line-height: 180%;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 1.2em;
-	font-style: italic;
+/* 區塊 */
+.block-slide-container {
+	width:230px; 
+	height:230px;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+	background:#FFF;	
+}
+.block-slide-content {
+	position:absolute;
+	margin:15px 15px 15px 15px;
+	padding:0;
+}
+.block-slide-content li {
+	width:230px;
+	height:230px;
+	float:left;
+}
+/* 頁尾 */
+#footer {
+	padding: 2rem 0 0.1rem 0 ;
+	text-align: center;
 }
 
-.ballon-bgbtm {
-	height: 1.87em;
-	background: url(images/img09.png) no-repeat right top;
+#footer a {
+	color: #3a3a3a;
 }
 
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
+#footer a:hover {
+	color: #3a3a3a;
+}
+#footer li{
+	display:inline;
 	
-	#copyright
-	{
-		position: relative;
-		padding: 3em 0em;
-		text-align: center;
-		color: #877850;
-		background: #62573b;
-	}
-	
-	#copyright a
-	{
-		text-decoration: none;
-		color: #877850;
-	}
+}
 
 	
