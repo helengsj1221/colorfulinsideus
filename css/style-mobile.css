@@ -402,25 +402,24 @@ h2 {
 }
 .block .card {
   margin: 20px;
-  padding: 100px 0px 50px 0px;
+  padding: 100px 0px 110px 0px;
 }
 .block .card .card-img-top {
   position: relative;
   z-index: 2;
-  width: 302px;
-  height: 222px;
+  width: 290px;
+  height: 200px;
   transform: translateY(52%);
   transition: 0.5s;
 }
 .block .card .card-body {
   z-index: 1;
-/*   padding: 100px 0px 50px 0px; */
-  height: 180px;
-  transform: translateY(-90%);
+  height: 190px;
+  transform: translateY(-70%);
   transition: 0.5s;
 }
 .block .card .card-body .card-title {
-  margin: 10px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
   font-size: 20pt;
   font-weight: bold;
   line-height: 1.2;
@@ -447,7 +446,7 @@ h2 {
 }
 /* 頁尾 */
 #footer {
-	padding: 1100px 0px 70px 0 ;
+	padding: 1250px 0px 70px 0 ;
 	text-align: center;
 }
 #footer a {
