@@ -17,13 +17,13 @@
 		<title>Colorful Entertainment Inc.</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-mobile.css" media="only screen and (min-width: 0px) and (max-width: 320px)" />
+		<link rel="stylesheet" href="css/style-mobile.css" media="only screen and (min-width: 321px) and (max-width: 960px)" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    	<script type="text/javascript" src="js/banner.js"></script>
-    	<script type="text/javascript" src="js/block.js"></script>
+		<script src="js/jquery-1.7.2.min.js"></script>
+    	<script src="js/banner.js"></script>
 	</head> 
 	<!-- 主要頁面 -->
 	<body class="homepage">
@@ -38,7 +38,7 @@
 					<nav id="nav">
 						<ul class="drop-down-menu">
 							<li><a class="link link-index" href="index.php"><span data-letters-l="首" data-letters-r="頁">首頁</span></a></li>
-							<li><a class="link link-index" href="test.php"><span data-letters-l="公司" data-letters-r="簡介">公司簡介</span></a>
+							<li><a class="link link-index" href="#"><span data-letters-l="公司" data-letters-r="簡介">公司簡介</span></a>
 								<ul>
     								<li><a class="link link-secindex" href="test.php"><span data-letters="公司沿革">公司沿革</span></a></li><br>
     								<li><a class="link link-secindex" href="test.php"><span data-letters="聯絡我們">聯絡我們</span></a></li><br>
@@ -46,7 +46,7 @@
 							</li>
 							<li><a class="link link-index" href="test.php"><span data-letters-l="藝" data-letters-r="人">藝人</span></a></li>
 							<li><a class="link link-index" href="test.php"><span data-letters-l="購物" data-letters-r="商城">購物商城</span></a></li>
-							<li><a class="link link-index" href="test.php"><span data-letters-l="會員" data-letters-r="專區">會員專區</span></a>
+							<li><a class="link link-index" href="#"><span data-letters-l="會員" data-letters-r="專區">會員專區</span></a>
 								<ul>
 									<li><a class="link link-secindex" href="test.php"><span data-letters="會員註冊">會員註冊</span></a></li><br>
     								<li><a class="link link-secindex" href="test.php"><span data-letters="會員登入">會員登入</span></a></li><br>
@@ -64,9 +64,9 @@
 		<body>
     	<div class="slide-container" id="slide_component">
     		<ul class="slide-content">
-    			<li><img src="images/banner01.jpg" width="1280px" height="580px" /></li>
-    			<li><img src="images/banner02.jpg" width="1280px" height="580px" /></li>
-    			<li><img src="images/banner03.jpg" width="1280px" height="580px" /></li>
+				<li><img src="images/banner01.jpg" /></li>
+    			<li><img src="images/banner02.jpg" /></li>
+    			<li><img src="images/banner03.jpg" /></li>
     		</ul>
     		<ul class="slide-items">
     			<li class="current-slide-item"></li>
@@ -83,23 +83,50 @@
     	<?php 
     	if(mysqli_num_rows($result) > 0){   	
     	    while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-    	        echo "<li><a class='desc' href='test.php'>". $row['BOARD_DESC'] ."<span  style='float:right;font-size:16px;'>Date:".$row['BOARD_DATES']."</span></a></li>";
+    	        echo "<li><a class='desc' href='test.php'>". $row['BOARD_DESC'] ."<span class='date'>Date:".$row['BOARD_DATES']."</span></a></li>";
     	    }
     	}
     	mysqli_close($con);
          ?>
+         <li><a class='more' href='test.php' style='color: #796400;'>more</a></li>
         </ul>
 	</div>
+	</body>
+	<!-- 區塊 -->
+	<body>
+	<div class="block">
+    <div class="card">
+        <img src="images/concert.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">藝人專區</h5>
+            <a href="test.php" class="btn">More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/video.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">影音專區</h5>
+            <a href="test.php" class="btn">More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/shop.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">購物平台</h5>
+            <a href="test.php" class="btn">More</a>
+        </div>
+    </div>
+</div>
 	</body>
 <!-- 頁尾 -->
 <body>
 <footer id="footer">
-	<div class="container">
+	<div class="footer-container">
 	<h2>聯絡我們</h2><br>
 		<ul class="icons">
-<!-- 			<li><a href="#"><img src="images/FB.png" width="70px" height="70px"/></a></li> -->
-			<li><a href="https://www.instagram.com/colorful.ent_official/"><img src="images/IG.png" width="70px" height="70px"/></a></li>
-			<li><a href="mailto:service@colorful-entertainment-official.com"><img src="images/EMAIL.png" width="70px" height="70px"/></a></li>
+<!-- 			<li><a href="#"><img id="sns" src="images/FB.png"/></a></li> -->
+			<li><a href="https://www.instagram.com/colorful.ent_official/"><img id="sns" src="images/IG.png"/></a></li>
+			<li><a href="mailto:service@colorful-entertainment-official.com"><img id="sns" src="images/EMAIL.png"/></a></li>
 		</ul>
 	</div>
 </footer>
@@ -107,5 +134,4 @@
 </div>
 
 <script type="text/javascript">$("#slide_component").jSlide();</script>
-<script type="text/javascript">$("#block_slide_component").jbSlide();</script>
 </html>
