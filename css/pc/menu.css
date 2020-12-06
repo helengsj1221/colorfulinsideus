@@ -1,0 +1,276 @@
+html, body {
+	
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+	font-size: 10pt;
+	color: #877850;
+}
+div {
+	margin:auto;
+	padding:0;
+}
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+	 list-style: none;
+}
+
+
+body, #skel-panels-pageWrapper {
+	background: #FFF2CF url(images/img01.png) repeat;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+	text-transform: none;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+	font-weight: 300;
+	color: #887644;
+}
+
+a {
+	color: #706443;
+}
+
+#header {
+	position: relative;
+	padding: 40px 0px;
+	width:1280px;
+	height:100px;
+}
+/* Logo */
+#logo {
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+
+#logo h1
+{
+	float: left;
+}
+
+#logo h1 a {
+	padding: 10px 10px 0px 0px;
+	text-decoration: none;
+	text-transform: none;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+	color: #1C1C1C;
+}
+
+#logo span {
+	float: left;
+	padding: 10px 0em 0em 0em;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	color: #545454;
+}
+
+/* Menu */
+#nav {
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+#nav ul {
+	float: right;
+	text-align: center;
+}
+
+#nav li {
+	display: inline-block;
+}
+
+#nav a {
+	display: block;
+	float: left;
+	margin-right: 0;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: none;
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+	font-size: 20px;
+	color: #2C2C2C;
+}
+
+#nav .current_page_item {
+	color: #2C2C2C;
+}
+
+#nav .current_page_item a {
+	background: #212121;
+	color: #FFFFFF;
+	box-shadow: inset 0px -15px 10px 0px rgba(0,0,0,0.25);
+	text-shadow: none;
+}
+
+ul.drop-down-menu {
+    display: inline-block;
+    font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+    font-size: 13px;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+ul.drop-down-menu > li:last-child {
+    border-bottom: none;
+}
+
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+/* 主目錄 */
+.link--index {
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #3A4945;
+	padding: 0 0 0.125em;
+}
+
+.link-index::before,
+.link-index::after {
+	content: '';
+	width: 100%;
+	height: 3px;
+	z-index: -1;
+	background: #3A4945;
+	position: absolute;
+	-webkit-transform: scale3d(0,1,1);
+	transform: scale3d(0,1,1);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.link-index::before {
+	right: 0;
+	top: 0;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.link-index::after {
+	left: 0;
+	bottom: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.link-index:hover::before,
+.link-index:hover::after {
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.link-index span {
+	position: relative;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.link-index:hover span {
+	color: transparent;
+}
+
+.link-index span::before,
+.link-index span::after {
+	position: absolute;
+	color: #000;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.link-index span::before {
+	content: attr(data-letters-l);
+	left: 0;
+	-webkit-transform: translate3d(-5px,0,0);
+	transform: translate3d(-5px,0,0);
+}
+
+.link-index span::after {
+	content: attr(data-letters-r);
+	right: 0;
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+}
+
+.link-index:hover span::before,
+.link-index:hover span::after {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+ul.drop-down-menu ul {
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 100px;
+    display: none;
+}
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+	opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;
+    border-right: 5px;
+    display: block;
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+
+/*  次目錄 */
+.link-secindex {
+	background: #dadada;
+}
+
+.link-secindex:hover {
+	background: #414141;
+}
+
+
+.link-secindex:hover::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link-secindex span {
+	display: block;
+	position: relative;
+}
+
+.link-secindex span::before {
+	content: attr(data-letters);
+	position: absolute;
+	color: #fff;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 0%;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.link-secindex:hover span::before {
+	width: 100%;
+}   

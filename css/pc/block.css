@@ -1,0 +1,51 @@
+/* 區塊 */
+.block {
+  padding: 1px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.block .card {
+  margin: 20px;
+}
+.block .card .card-img-top {
+  position: relative;
+  z-index: 2;
+  width: 302px;
+  height: 222px;
+  transform: translateY(52%);
+  transition: 0.5s;
+}
+.block .card .card-body {
+  z-index: 1;
+  padding: 10px;
+  height: 180px;
+  transform: translateY(-90%);
+  transition: 0.5s;
+}
+.block .card .card-body .card-title {
+  margin: 10px 0px 30px 0px;
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.block .card .card-body .btn {
+  padding:5px 10px;
+  color: black;
+  text-decoration: none;
+  line-height: 1.5;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.5s;
+  float: right;
+}
+.block .card .card-body .btn:hover {
+  color: white;
+  background: black;
+}
+.block .card:hover .card-img-top {
+  transform: translateY(1%);
+}
+.block .card:hover .card-body {
+  transform: translateY(0);
+}

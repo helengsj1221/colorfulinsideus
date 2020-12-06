@@ -1,0 +1,36 @@
+/* 頁尾 */
+#footer {
+	text-align: center;
+	width:320px;
+	height:150px;
+	top:100px;
+	bottom:50px;
+	margin:0 auto;
+	position:relative;
+}
+#sns {
+	width:30px;
+	height:30px;
+}
+#footer li{
+	display: inline-table;
+	margin: 0 auto;
+}
+.icon-list {
+  display: flex;
+  list-style-type: none;
+}
+.icon-list .icon-list__item {
+  margin: 0 20px;
+}
+.icon-list .icon-list__item a .box {
+  --box-width: 40px;
+  --box-height: 40px;
+  --box-depth: 10px;
+  width: var(--box-width);
+  height: var(--box-height);
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(55deg) rotateZ(45deg);
+  transition: 0.5s;
+}
