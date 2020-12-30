@@ -1,23 +1,17 @@
 <?php
-require('config.php');
+include("public/config.php");
 
-// Check for a cookie, if none go to login page
-if (!isset($_COOKIE['session_id']))
+if (!isset($_COOKIE['MEMBER_SEQNO']))
 {
     header('Location: login.php?refer='. urlencode(getenv('REQUEST_URI')));
 }
+$guid = $_COOKIE['MEMBER_SEQNO'];
 
-// Try to find a match in the database
-$guid = $_COOKIE['session_id'];
-$con = mysql_connect($db_host, $db_user, $db_pass);
-mysql_select_db($db_name, $con);
+$query = "SELECT * FROM `MEMBER` WHERE `MEMBER_SEQNO` = '".$guid."'";
+$result = mysqli_query($con,$query);
 
-$query = "SELECT userid FROM susers WHERE guid = '$guid'";
-$result = mysql_query($query, $con);
-
-if (!mysql_num_rows($result))
+if (!mysqli_num_rows($result))
 {
-    // No match for guid
     header('Location: login.php?refer='. urlencode(getenv('REQUEST_URI')));
 }
 ?>

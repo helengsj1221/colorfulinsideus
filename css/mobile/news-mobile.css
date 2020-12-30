@@ -12,23 +12,26 @@ ul.newstyle {
 }
 
 ul.newstyle li {
-	padding: 5px 10px 10px 1px;
+	padding: 10px 10px 10px 1px;
 }
 a.desc {
-	font-size: 15px;
+	font-size: 12px;
 }
 span.date{
 	float:right;
-	font-size:3px;'
+	font-size:8px;'
 }
-
+a.more{
+	font-size: 12px;
+	text-align: right;
+}
 ul.newstyle li:last-child {
 	border-bottom: 0;
 }
 
 ul.newstyle a {
 	display: block;
-	padding: 0px 2px 0px 15px;
+	padding: 0px 2px 0px 30px;
 	text-decoration: none;
 	color: #525252;
 }

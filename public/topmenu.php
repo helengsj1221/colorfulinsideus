@@ -20,7 +20,7 @@
            	</ul>
 		</li>
 		<li><a class="link link-index" href="test.php"><span data-letters-l="藝" data-letters-r="人">藝人</span></a></li>
-		<li><a class="link link-index" href="test.php"><span data-letters-l="購物" data-letters-r="商城">購物商城</span></a></li>
+		<li><a class="link link-index" href="shop.php"><span data-letters-l="購物" data-letters-r="商城">購物商城</span></a></li>
 		<li><a class="link link-index" href="#"><span data-letters-l="會員" data-letters-r="專區">會員專區</span></a>
 			<ul>
 				<li><a class="link link-secindex" href="test.php"><span data-letters="會員註冊">會員註冊</span></a></li><br>

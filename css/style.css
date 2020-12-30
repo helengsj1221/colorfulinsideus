@@ -7,6 +7,7 @@ body {
 	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
 	font-size: 10pt;
 	color: #877850;
+	background: #FFF2CF url(images/img01.png) repeat;
 }
 div {
 	margin:auto;
@@ -19,11 +20,6 @@ ul {
 }
 li {
 	 list-style: none;
-}
-
-
-body, #skel-panels-pageWrapper {
-	background: #FFF2CF url(images/img01.png) repeat;
 }
 
 h1{

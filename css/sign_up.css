@@ -1,0 +1,22 @@
+body {
+  background: #FFF2CF url(images/img01.png) repeat;
+}
+.sign-body{
+	width:640px;
+	height:380px;
+	margin:0 auto;
+	position:relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 200px;
+    color: black;
+    background: rgba(255,228,225,0.8);
+    border-radius: 10px;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+}
+.sign-body h1 {
+  color: black;
+  margin: 0 0 40px 0;
+  font-size: 36pt;
+}

@@ -1,13 +1,22 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: #FFF2CF url(images/img01.png) repeat;
 }
-
+.login-form{
+	width:640px;
+	height:380px;
+	margin:0 auto;
+	position:relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 200px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+}
 .btn {
-  padding: 8px 20px;
+  padding: 10px 20px;
   border-radius: 0;
   overflow: hidden;
   font-size: 16pt;
@@ -17,7 +26,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%;
   height: 100%;
   background: linear-gradient(120deg, transparent, var(--primary-color), transparent);
   transform: translateX(-100%);
@@ -35,22 +44,16 @@ body {
   font-size: 16pt;
 }
 .form-input-material input {
-  color: white;
+  color: black;
   padding: 10px 20px;
   font-size: 16pt;
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 200px;
-  color: white;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+  
 }
 .login-form h1 {
+  color: white;
   margin: 0 0 40px 0;
   font-size: 36pt;
 }
