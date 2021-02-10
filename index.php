@@ -55,7 +55,7 @@
     	<?php 
     	if(mysqli_num_rows($result) > 0){   	
     	    while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-    	        echo "<li><a class='desc' href='test.php'>". $row['BOARD_DESC'] ."<span class='date'>Date:".$row['BOARD_DATES']."</span></a></li>";
+    	        echo "<li><a class='desc' href='test.php'>". $row['BOARD_ITEM'] ."<span class='date'>Date:".$row['BOARD_DATES']."</span></a></li>";
     	    }
     	}
     	mysqli_close($con);
