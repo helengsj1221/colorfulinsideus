@@ -34,9 +34,11 @@
     			<li><img src="images/banner03.jpg" /></li>
     			<li><img src="images/banner04.jpg" /></li>
     			<li><img src="images/banner05.jpg" /></li>
+    			<li><img src="images/banner06.jpg" /></li>
     		</ul>
     		<ul class="slide-items">
     			<li class="current-slide-item"></li>
+    			<li></li>
     			<li></li>
     			<li></li>
     			<li></li>
