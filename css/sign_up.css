@@ -1,5 +1,6 @@
 body {
-  background: #FFF2CF url(images/img01.png) repeat;
+/*   background: #FFF2CF url(images/img01.png) repeat; */
+	 background: #e8e0ed;
 }
 .sign-body{
 	width:640px;
