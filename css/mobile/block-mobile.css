@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   perspective: 800px;
-  padding: 200px 0px 100px 0px;
+  padding: 20px 0px 100px 0px;
 }
 .scene .card {
   position: relative;
@@ -48,6 +48,7 @@
 	height: 30px;
 	width: 150px;
 	background: #c0c0c0;
+	margin-top: 200px;
 	margin-bottom: 20px;
 	padding: 8px 0px 0px 15px;
 	color: #3b3b3b;
