@@ -2,10 +2,12 @@
 <?php include("public/config.php"); ?>
 <?php
     //撈資料
-    $today     = date("Ymd");
+    $today   = date("Ymd");
     $newssql = "SELECT * FROM `BOARD` WHERE `BOARD_DATES`<= ".$today." AND `BOARD_DATEE` >=".$today." ORDER BY `BOARD_DATES` DESC LIMIT 7";
     mysqli_query($con, 'SET NAMES utf8');
-    $result = mysqli_query($con, $newssql);
+    $result  = mysqli_query($con, $newssql);
+    $picssql = "SELECT * FROM `PICTURE` WHERE `PIC_DATES`<= ".$today." AND `PIC_DATEE` >=".$today." ORDER BY `PIC_DATES` DESC LIMIT 3";
+    $banner  = mysqli_query($con, $picssql);
 ?>
 <?php include("public/topmenu.php"); ?>
 <div id="wrapper">
@@ -29,18 +31,16 @@
 		<body>
     	<div class="slide-container" id="slide_component">
     		<ul class="slide-content">
-				<li><img src="images/banner01.jpg" /></li>
-    			<li><img src="images/banner02.jpg" /></li>
-    			<li><img src="images/banner03.jpg" /></li>
-    			<li><img src="images/banner04.jpg" /></li>
-    			<li><img src="images/banner05.jpg" /></li>
-    			<li><img src="images/banner06.jpg" /></li>
+    		<?php 
+    		if(mysqli_num_rows($banner) > 0){   	
+    		    while ($row = mysqli_fetch_array($banner, MYSQLI_BOTH)) {
+    		        echo "<li><img src=". $row['PIC_LOCAL']." /></li>";
+        	    }
+        	}
+             ?>
     		</ul>
     		<ul class="slide-items">
     			<li class="current-slide-item"></li>
-    			<li></li>
-    			<li></li>
-    			<li></li>
     			<li></li>
     			<li></li>
     		</ul>
@@ -60,34 +60,42 @@
     	}
     	mysqli_close($con);
          ?>
+         <li><a href='' style='color: #796400;'></a></li>
          <li><a class='more' href='news000.php' style='color: #796400;'>more</a></li>
+         <li><a href='' style='color: #796400;'></a></li>
         </ul>
 	</div>
 	</body>
 	<!-- 區塊 -->
 	<body>
-	<div class="block">
-    <div class="card">
-        <img src="images/concert.png" class="card-img-top">
-        <div class="card-body">
-            <h5 class="card-title">藝人專區</h5>
-            <a href="test.php" class="btn">More</a>
-        </div>
+	<div id="block">
+	<h2>分類專區  AREA</h2>
+	<div class="scene">
+  <div class="card">
+    <div class="card__face card__face--front">
+      <img src="images/artist.jpg" />
     </div>
-    <div class="card">
-        <img src="images/video.png" class="card-img-top">
-        <div class="card-body">
-            <h5 class="card-title">影音專區</h5>
-            <a href="test.php" class="btn">More</a>
-        </div>
+    <div class="card__face card__face--back">
+      <a href='test.php'><img src="images/block.jpg" />
     </div>
-    <div class="card">
-        <img src="images/shop.png" class="card-img-top">
-        <div class="card-body">
-            <h5 class="card-title">購物平台</h5>
-            <a href="test.php" class="btn">More</a>
-        </div>
+  </div>
+  <div class="card">
+    <div class="card__face card__face--front">
+      <img src="images/video.jpg" />
     </div>
+    <div class="card__face card__face--back">
+      <a href='test.php'><img src="images/block.jpg" />
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__face card__face--front">
+      <img src="images/shop.jpg" />
+    </div>
+    <div class="card__face card__face--back">
+      <a href='test.php'><img src="images/block.jpg" />
+    </div>
+  </div>
+</div>
 </div>
 	</body>
 <?php include("public/footer.php"); ?>	
