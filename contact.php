@@ -28,7 +28,7 @@
 	<div id="contact">
 	<h2>聯絡我們</h2>
         
-		<div id="content">
+		<div class="box">
             <div id="detail">    
             </div>
             <div id="detail">    
