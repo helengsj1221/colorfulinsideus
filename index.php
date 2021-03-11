@@ -92,7 +92,7 @@
       <img src="images/shop.jpg" />
     </div>
     <div class="card__face card__face--back">
-      <a href='test.php'><img src="images/block.jpg" />
+      <a href='shop.php'><img src="images/block.jpg" />
     </div>
   </div>
 </div>

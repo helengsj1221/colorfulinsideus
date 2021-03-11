@@ -12,7 +12,6 @@
 <!-- 目錄 -->
 <nav id="nav">
 	<ul class="drop-down-menu">
-		<li><a class="link link-index" href="index.php"><span data-letters-l="首" data-letters-r="頁">首頁</span></a></li>
 		<li><a class="link link-index" href="#"><span data-letters-l="公司" data-letters-r="簡介">公司簡介</span></a>
         	<ul>
         		<li><a class="link link-secindex" href="company.php"><span data-letters="公司沿革">公司沿革</span></a></li><br>
@@ -20,6 +19,7 @@
            	</ul>
 		</li>
 		<li><a class="link link-index" href="test.php"><span data-letters-l="藝" data-letters-r="人">藝人</span></a></li>
+		<li><a class="link link-index" href="test.php"><span data-letters-l="影" data-letters-r="音">影音</span></a></li>
 		<li><a class="link link-index" href="shop.php"><span data-letters-l="購物" data-letters-r="商城">購物商城</span></a></li>
 		<li><a class="link link-index" href="#"><span data-letters-l="會員" data-letters-r="專區">會員專區</span></a>
 			<ul>
