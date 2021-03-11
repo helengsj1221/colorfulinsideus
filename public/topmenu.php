@@ -23,8 +23,8 @@
 		<li><a class="link link-index" href="shop.php"><span data-letters-l="購物" data-letters-r="商城">購物商城</span></a></li>
 		<li><a class="link link-index" href="#"><span data-letters-l="會員" data-letters-r="專區">會員專區</span></a>
 			<ul>
-				<li><a class="link link-secindex" href="test.php"><span data-letters="會員註冊">會員註冊</span></a></li><br>
-    			<li><a class="link link-secindex" href="test.php"><span data-letters="會員登入">會員登入</span></a></li><br>
+				<li><a class="link link-secindex" href="sign_up.php"><span data-letters="會員註冊">會員註冊</span></a></li><br>
+    			<li><a class="link link-secindex" href="login.php"><span data-letters="會員登入">會員登入</span></a></li><br>
     			<li><a class="link link-secindex" href="test.php"><span data-letters="帳號資訊">帳號資訊</span></a></li><br>
            </ul>
         </li>
