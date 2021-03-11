@@ -15,8 +15,8 @@
 		<li><a class="link link-index" href="index.php"><span data-letters-l="首" data-letters-r="頁">首頁</span></a></li>
 		<li><a class="link link-index" href="#"><span data-letters-l="公司" data-letters-r="簡介">公司簡介</span></a>
         	<ul>
-        		<li><a class="link link-secindex" href="test.php"><span data-letters="公司沿革">公司沿革</span></a></li><br>
-        		<li><a class="link link-secindex" href="test.php"><span data-letters="聯絡我們">聯絡我們</span></a></li><br>
+        		<li><a class="link link-secindex" href="company.php"><span data-letters="公司沿革">公司沿革</span></a></li><br>
+        		<li><a class="link link-secindex" href="contact.php"><span data-letters="聯絡我們">聯絡我們</span></a></li><br>
            	</ul>
 		</li>
 		<li><a class="link link-index" href="test.php"><span data-letters-l="藝" data-letters-r="人">藝人</span></a></li>

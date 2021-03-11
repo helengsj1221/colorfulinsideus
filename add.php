@@ -1,18 +1,14 @@
 <?php
-ini_set("display_errors","On");
-
-$mail = $_POST['mail'];
+include("public/config.php");
+$memberid = $_POST['memberid'];
 $password = $_POST['password'];
 $name = $_POST['name'];
-$phone = $_POST['phone'];
 $addr = $_POST['addr'];
 
-require_once "../../method/connect.php";
+require_once "public/config.php";
+$query = "INSERT INTO MEMBER(MEMBER_SEQNO,MEMBER_ID,MEMBER_PASSWD,MEMBER_NAME,MEMBER_ADDR)VALUES('MEMBER".$memberid."','".$memberid."','".$password."','".$name."','".$addr."')";
+$result = mysqli_query($con,$query);
 
-$insert = $connect -> prepare("INSERT INTO member(mail,password,name,phone,addr)
-       VALUES(?,?,?,?,?)");
-$insert -> execute(array($mail,$password,$name,$phone,$addr));
-
-header("location:../?sig_suc=註冊成功");
+header("location:login.php?sig_suc=註冊成功");
 
 ?>

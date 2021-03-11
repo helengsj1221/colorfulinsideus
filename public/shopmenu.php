@@ -14,7 +14,7 @@
 	<ul class="drop-down-menu">
 		<li><a class="link link-index" href="index.php"><span data-letters-l="首" data-letters-r="頁">首頁</span></a></li>
 		<li><a class="link link-index" href="test.php"><span data-letters-l="商城" data-letters-r="首頁">商城首頁</span></a></li>
-		<li><a class="link link-index" href="test.php"><span data-letters-l="會員" data-letters-r="註冊">會員註冊</span></a></li>
+		<li><a class="link link-index" href="sign_up.php"><span data-letters-l="會員" data-letters-r="註冊">會員註冊</span></a></li>
 		<li><a class="link link-index" href="login.php"><span data-letters-l="會員" data-letters-r="登入">會員登入</span></a></li>
 		<li><a class="link link-index" href="test.php"><span data-letters-l="常見" data-letters-r="問題">常見問題</span></a></li>
 	</ul>

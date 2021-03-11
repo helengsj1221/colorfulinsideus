@@ -1,0 +1,28 @@
+#left {
+	float: left;
+	position: relative;
+	width:180px;
+	height:580px;
+}
+
+#leftnav {
+	position: absolute;
+/* 	top: 20px; */
+	left: 5px;
+}
+
+ul.leftmenu li{
+	height:30px;
+}
+
+ul.leftmenu li a{
+	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
+    font-size: 20px;
+	text-decoration:none;
+	color: white;
+}
+
+ul.leftmenu li a:hover{
+/* 	color: #40aae3; */
+	color: #7AB8CC;
+}
