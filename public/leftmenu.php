@@ -10,6 +10,7 @@
 	<ul class="leftmenu">
 		<li><a class="left-link-index" href="company.php">公司簡介</a></li>
 		<li><a class="left-link-index" href="chistory.php">公司沿革</a></li>
+		<li><a class="left-link-index" href="chistory.php">創辦人</a></li>
 	</ul>
 </nav>
 </div>					

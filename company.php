@@ -3,7 +3,6 @@
 <?php
     //撈資料
     $today     = date("Ymd");
-//     $newssql = "SELECT * FROM `BOARD` WHERE `BOARD_DATES`<= ".$today." AND `BOARD_DATEE` >=".$today." ORDER BY `BOARD_DATES` DESC";
     $newssql = "SELECT * FROM `COMPANY`";
     mysqli_query($con, 'SET NAMES utf8');
     $result = mysqli_query($con, $newssql);

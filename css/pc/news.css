@@ -3,6 +3,8 @@ ul.newstyle {
 	font-family: 'Oswald','Microsoft JhengHei', sans-serif;
 	margin: 0px;
 	padding: 0px;
+	height: 495px;
+	width: 1280px;
 	list-style: none;
 	background: white;
 	border-top-left-radius: 10px;
@@ -12,10 +14,11 @@ ul.newstyle {
 }
 
 ul.newstyle li {
-	padding: 15px 15px 15px 0px;
+	padding: 20px 15px 20px 0px;
+	text-align: left;
 }
 a.desc {
-	font-size: 22px;
+	font-size: 20px;
 }
 a.more{
 	font-size: 18px;
@@ -23,7 +26,8 @@ a.more{
 }
 span.date{
 	float:right;
-	font-size:16px;
+	padding: 15px 15px 15px 0px;
+	font-size:14px;
 }
 ul.newstyle li:last-child {
 	border-bottom: 0;

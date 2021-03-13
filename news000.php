@@ -3,7 +3,7 @@
 <?php
     //撈資料
     $today     = date("Ymd");
-    $newssql = "SELECT * FROM `BOARD` WHERE `BOARD_DATES`<= ".$today." AND `BOARD_DATEE` >=".$today." ORDER BY `BOARD_DATES` DESC";
+    $newssql = "SELECT * FROM `BOARD` WHERE `BOARD_DATES`<= ".$today." AND `BOARD_DATEE` >=".$today." ORDER BY `BOARD_DATES` DESC LIMIT 9";
     mysqli_query($con, 'SET NAMES utf8');
     $result = mysqli_query($con, $newssql);
 ?>
@@ -29,7 +29,7 @@
     	<?php 
     	if(mysqli_num_rows($result) > 0){   	
     	    while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-    	        echo "<li><a class='desc' href='test.php'>". $row['BOARD_DESC'] ."<span class='date'>Date:".$row['BOARD_DATES']."</span></a></li>";
+    	        echo "<li><a class='desc' href='test.php'>". $row['BOARD_ITEM'] ."<span class='date'>Date:".$row['BOARD_DATES']."</span></a></li>";
     	    }
     	}
     	mysqli_close($con);

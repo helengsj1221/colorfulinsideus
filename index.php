@@ -51,7 +51,6 @@
 	<div id="news">
  	<h2>最新消息  NEWS</h2>
     	<ul class="newstyle">
-    	<li><a href='' style='color: #796400;'></a></li>
     	<?php 
     	if(mysqli_num_rows($result) > 0){   	
     	    while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
@@ -60,9 +59,7 @@
     	}
     	mysqli_close($con);
          ?>
-         <li><a href='' style='color: #796400;'></a></li>
          <li><a class='more' href='news000.php' style='color: #796400;'>more</a></li>
-         <li><a href='' style='color: #796400;'></a></li>
         </ul>
 	</div>
 	</body>

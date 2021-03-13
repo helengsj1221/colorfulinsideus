@@ -38,6 +38,5 @@
         </div>
 	</div>
 	</body>
-	<?php include("public/footer.php"); ?>	
 </div>
 </html>

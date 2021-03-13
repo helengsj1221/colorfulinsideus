@@ -6,15 +6,16 @@
 	</head> 
 <div id="header">
 <!-- 左上公司名 -->
-<div id="logo">  <!-- 考慮放LOGO -->
+<div><h1><img id="logoicon" src="images/logo.png" /></h1></div>
+<div id="logo">
 	<h1><a href="index.php">Colorful Entertainment</a></h1><span>Inc.</span>
 </div>
 <!-- 目錄 -->
 <nav id="nav">
 	<ul class="drop-down-menu">
-		<li><a class="link link-index" href="#"><span data-letters-l="公司" data-letters-r="簡介">公司簡介</span></a>
+		<li><a class="link link-index" href="#"><span data-letters-l="關於" data-letters-r="繽紛紛">關於繽紛紛</span></a>
         	<ul>
-        		<li><a class="link link-secindex" href="company.php"><span data-letters="公司沿革">公司沿革</span></a></li><br>
+        		<li><a class="link link-secindex" href="company.php"><span data-letters="公司沿革">公司簡介</span></a></li><br>
         		<li><a class="link link-secindex" href="contact.php"><span data-letters="聯絡我們">聯絡我們</span></a></li><br>
            	</ul>
 		</li>
