@@ -29,11 +29,64 @@
 	<h2>聯絡我們</h2>
         
 		<div class="box">
-            <div id="detail">    
+            <div id="detail">
+             	<div id="image">
+            		<a href="https://www.facebook.com/%E7%B9%BD%E7%B4%9B%E7%B4%9B-Colorful-Entertainment-104276154812414" target="_blank">
+            			<img id="sns" src="images/FB.png"/>
+            			<div id="word">
+            				Facebook
+            			</div>
+            		</a>
+            		<img id="qr" src="images/QRFB.png"/>
+            	</div>
             </div>
-            <div id="detail">    
+            
+            <div id="detail">
+            	<div id="image">
+            		<a href="https://www.instagram.com/colorful.ent_official/" target="_blank">
+            			<img id="sns" src="images/IG.png"/>
+            			<div id="word">
+            				Instagram
+            			</div>
+            		</a>
+            		<img id="qr" src="images/QRIG.png"/>
+            	</div>
             </div>
-            <div id="detail">    
+            
+            <div id="detail">
+            	<div id="image">
+            		<a href="https://weibo.com/u/7563523995?is_all=1&topnav=1&topsug=1&wvr=6" target="_blank">
+            			<img id="sns" src="images/weibo.png"/>
+            			<div id="word">
+            				微博
+            			</div>
+            		</a>
+            		<img id="qr" src="images/QRWEIBO.png"/>
+            	</div>
+            </div>
+            
+            <div id="detail">
+            	<div id="image">
+            		<a href="https://space.bilibili.com/1016077618/" target="_blank">
+            			<img id="sns" src="images/bilibili.png"/>
+            			<div id="word">
+            				bilibili
+            			</div>
+            		</a>
+            		<img id="qr" src="images/QRBILIBILI.png"/>
+            	</div>
+            </div>
+            
+            <div id="detail">
+            	<div id="image">
+            		<a href="service@colorful-entertainment-official.com" target="_blank">
+            			<img id="sns" src="images/EMAIL.png"/>
+            			<div id="word">
+            				EMAIL
+            			</div>
+            		</a>
+            		<img id="qr" src="images/QREMAIL.png"/>
+            	</div>
             </div>
         </div>
 	</div>
