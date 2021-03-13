@@ -9,7 +9,7 @@
 	<h2>聯絡我們</h2><br>
 <ul class="icon-list">
   <li class="icon-list__item">
-    <a href="https://www.facebook.com/%E5%85%94%E5%A5%B3%E7%8B%BC-Rabbit-Wolf-583811742017956" target="_blank">
+    <a href="https://www.facebook.com/%E7%B9%BD%E7%B4%9B%E7%B4%9B-Colorful-Entertainment-104276154812414" target="_blank">
       <div class="box">
         <div class="box__face box__face--front">
           <img id="sns" src="images/FB.png"/>
@@ -52,5 +52,5 @@
   </li>
  </ul>
 	</div>
-	<br><div>© Colorful Entertainment 2020</div>
+	<br><div>© Colorful Entertainment 2021</div>
 </footer>
