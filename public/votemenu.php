@@ -6,7 +6,8 @@
 	</head> 
 <div id="header">
 <!-- 左上公司名 -->
-<div id="logo">  <!-- 考慮放LOGO -->
+<div><h1><img id="logoicon" src="images/logo.png" /></h1></div>
+<div id="logo">
 	<h1><a href="index.php">Colorful Entertainment</a></h1><span>Inc.</span>
 </div>
 <!-- 目錄 -->
