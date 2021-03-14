@@ -27,7 +27,7 @@
 	<div id="company">
 	
     	<div id="menu">
-        <?php include("public/leftmenu.php"); ?>
+        <?php include("public/leftcmenu.php"); ?>
         </div>
         
         <div id="content">
@@ -37,23 +37,9 @@
         	<?php 
             	if(mysqli_num_rows($result) > 0){
             	    while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-            	        echo "<li>公司名稱：<span>". $row['COMPANY_NAME'] ."</span>　　           創辦人：<span>". $row['COMPANY_FOUNDER'] ."</span>　　        　成立日期：<span>". $row['COMPANY_CRETDATE'] ."</span></li>";
+            	        echo "<p>公司名稱：<span>". $row['COMPANY_NAME'] ."</span>　　           創辦人：<span>". $row['COMPANY_FOUNDER'] ."</span>　　        　成立日期：<span>". $row['COMPANY_CRETDATE'] ."</span><p><br>";
+//             	        echo "<p>主描述<span>". $row['COMPANY_MAIN'] ."</span><p>";
             	    }
-            	}
-            ?>
-            </div>
-        <BR>
-        <h2>主描述</h2>
-        
-        	<div id="detail">
-        	<?php 
-            	$newssql = "SELECT * FROM `COMPANY`";
-            	mysqli_query($con, 'SET NAMES utf8');
-            	$result = mysqli_query($con, $newssql);
-            	if(mysqli_num_rows($result) > 0){
-                	while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-                        echo "<li><span>". $row['COMPANY_MAIN'] ."</span></li>";
-                	}
             	}
             	mysqli_close($con);
             ?>

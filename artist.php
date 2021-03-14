@@ -13,7 +13,7 @@
 		<script src="js/jquery-1.7.2.min.js"></script>
     	<script src="js/banner.js"></script>
 	</head> 
-<h2><a style="text-align:center;font-size:22px;" href="#">開發中</a></h2>
+<h2><a href="#">開發中</a></h2>
 <?php include("public/footer.php"); ?>
 </div>	
 </html>

@@ -79,7 +79,7 @@
             
             <div id="detail">
             	<div id="image">
-            		<a href="service@colorful-entertainment-official.com" target="_blank">
+            		<a href="mailto:service@colorful-entertainment-official.com" target="_blank">
             			<img id="sns" src="images/EMAIL.png"/>
             			<div id="word">
             				EMAIL
@@ -92,4 +92,5 @@
 	</div>
 	</body>
 </div>
+<br><div id="foot">© Colorful Entertainment 2021</div>
 </html>

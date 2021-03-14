@@ -147,15 +147,51 @@
   box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.5);
 }
 .icon-list .icon-list__item:hover:nth-child(3) a .box__face--front {
-  background: #408080;
+  background: #ffff00;
 }
 .icon-list .icon-list__item:hover:nth-child(3) a .box__face--front svg path {
   fill: white;
 }
 .icon-list .icon-list__item:hover:nth-child(3) a .box__face--right {
-  background: #42838a;
+  background: #efd910;
 }
 .icon-list .icon-list__item:hover:nth-child(3) a .box__face--bottom {
-  background: #346767;
+  background: #f8da07;
+}
+.icon-list .icon-list__item:hover:nth-child(4) a .box {
+  transform: rotateX(55deg) rotateZ(45deg) translateZ(20px);
+}
+.icon-list .icon-list__item:hover:nth-child(4) a .box .box__face--back {
+  box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.5);
+}
+.icon-list .icon-list__item:hover:nth-child(4) a .box__face--front {
+  background: #0080ff;
+}
+.icon-list .icon-list__item:hover:nth-child(4) a .box__face--front svg path {
+  fill: white;
+}
+.icon-list .icon-list__item:hover:nth-child(4) a .box__face--right {
+  background: #0080c0;
+}
+.icon-list .icon-list__item:hover:nth-child(4) a .box__face--bottom {
+  background: #0094db;
+}
+.icon-list .icon-list__item:hover:nth-child(5) a .box {
+  transform: rotateX(55deg) rotateZ(45deg) translateZ(20px);
+}
+.icon-list .icon-list__item:hover:nth-child(5) a .box .box__face--back {
+  box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.5);
+}
+.icon-list .icon-list__item:hover:nth-child(5) a .box__face--front {
+  background: #008080;
+}
+.icon-list .icon-list__item:hover:nth-child(5) a .box__face--front svg path {
+  fill: white;
+}
+.icon-list .icon-list__item:hover:nth-child(5) a .box__face--right {
+  background: #408080;
+}
+.icon-list .icon-list__item:hover:nth-child(5) a .box__face--bottom {
+  background: #3f7e7e;
 }
 

@@ -73,7 +73,7 @@
       <img src="images/artist.jpg" />
     </div>
     <div class="card__face card__face--back">
-      <a href='test.php'><img src="images/block.jpg" />
+      <a href='artist.php'><img src="images/block.jpg" />
     </div>
   </div>
   <div class="card">
@@ -81,7 +81,7 @@
       <img src="images/video.jpg" />
     </div>
     <div class="card__face card__face--back">
-      <a href='test.php'><img src="images/block.jpg" />
+      <a href='video.php'><img src="images/block.jpg" />
     </div>
   </div>
   <div class="card">

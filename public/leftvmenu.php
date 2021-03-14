@@ -8,9 +8,9 @@
 <!-- 目錄 -->
 <nav id="leftnav">
 	<ul class="leftmenu">
-		<li><a class="left-link-index" href="company.php">公司簡介</a></li>
-		<li><a class="left-link-index" href="chistory.php">公司沿革</a></li>
-		<li><a class="left-link-index" href="chistory.php">創辦人</a></li>
+		<li><a class="left-link-index" href="video.php">影片專區</a></li>
+		<li><a class="left-link-index" href="music.php">音樂專區</a></li>
+<!-- 		<li><a class="left-link-index" href="chistory.php">花絮照片</a></li> -->
 	</ul>
 </nav>
 </div>					

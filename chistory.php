@@ -28,7 +28,7 @@
 	<div id="company">
 	
     	<div id="menu">
-        <?php include("public/leftmenu.php"); ?>
+        <?php include("public/leftcmenu.php"); ?>
         </div>
         
         <div id="content">
