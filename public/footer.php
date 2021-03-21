@@ -12,7 +12,7 @@
     <a href="https://www.facebook.com/%E7%B9%BD%E7%B4%9B%E7%B4%9B-Colorful-Entertainment-104276154812414" target="_blank">
       <div class="box">
         <div class="box__face box__face--front">
-          <img id="sns" src="images/FB.png"/>
+          <img id="sns" src="images/icon/FB.png"/>
         </div>
         <div class="box__face box__face--back"></div>
         <div class="box__face box__face--right"></div>
@@ -26,7 +26,7 @@
     <a href="https://www.instagram.com/colorful.ent_official/" target="_blank">
       <div class="box">
         <div class="box__face box__face--front">
-          <img id="sns" src="images/IG.png"/>
+          <img id="sns" src="images/icon/IG.png"/>
         </div>
         <div class="box__face box__face--back"></div>
         <div class="box__face box__face--right"></div>
@@ -40,7 +40,7 @@
     <a href="https://weibo.com/u/7563523995?is_all=1&topnav=1&topsug=1&wvr=6" target="_blank">
       <div class="box">
         <div class="box__face box__face--front">
-          <img id="sns" src="images/weibo.png"/>
+          <img id="sns" src="images/icon/weibo.png"/>
         </div>
         <div class="box__face box__face--back"></div>
         <div class="box__face box__face--right"></div>
@@ -54,7 +54,7 @@
     <a href="https://space.bilibili.com/1016077618/" target="_blank">
       <div class="box">
         <div class="box__face box__face--front">
-          <img id="sns" src="images/bilibili.png"/>
+          <img id="sns" src="images/icon/bilibili.png"/>
         </div>
         <div class="box__face box__face--back"></div>
         <div class="box__face box__face--right"></div>
@@ -68,7 +68,7 @@
     <a href="mailto:service@colorful-entertainment-official.com" target="_blank">
       <div class="box">
         <div class="box__face box__face--front">
-          <img id="sns" src="images/EMAIL.png"/>
+          <img id="sns" src="images/icon/EMAIL.png"/>
         </div>
         <div class="box__face box__face--back"></div>
         <div class="box__face box__face--right"></div>
